@@ -1,0 +1,127 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* aqui empieza el CSS del header */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+nav li{ /*espacio en el li */
+    padding: 10px;
+}
+
+input{
+    width: 200%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    
+}
+
+nav img { /* tamano de los logos del header*/
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    margin-bottom: 0px;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.user{
+    padding-left: 600px;
+}
+
+.barra{
+    padding-left: 300px;
+}
+
+/* aqui termina el header */
+
+/* Aqui empieza el CSS del lado izquierdo */
+
+.container {
+    display: grid;
+    grid-template-columns: 80px auto;
+    /* grid-template-rows: 510px; */
+    height: 100vh;
+}
+
+.container .left{
+    display: grid;
+    gap: 250px;
+    padding-left: 10px;
+    background: rgb(204, 153, 255);
+}
+
+.left img { /* tamano de los logos del header*/
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Aqui termina el lado izquierdo */
+
+/* Aqui comienza el CSS del bloque derecho */
+
+.movie{
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.movie-image{
+    margin: 0;
+}
+
+.movie-image img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.post-overlay{
+    background: rgba(240, 0, 0, .3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: end;
+}
+
+
+.movie:hover .post-overlay{
+    display: flex;
+}
+
+.movie-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    justify-content: center;
+    gap: 28px;
+    padding-top: 50px;
+}
